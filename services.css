@@ -1,0 +1,440 @@
+/* Services Page Specific Styles */
+
+/* Navigation */
+.navigation {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #84cc16;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #84cc16;
+}
+
+.nav-menu a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #84cc16;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Services Hero */
+.services-hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(236, 72, 153, 0.3));
+}
+
+.services-hero .hero-content {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+
+.services-hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.services-hero .highlight {
+  color: #84cc16;
+}
+
+.services-hero p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Services Grid */
+.services-grid-section {
+  padding: 100px 0;
+  background: #ec4899;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #84cc16;
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.service-card p {
+  color: #f0f0f0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.services-cta {
+  text-align: center;
+}
+
+/* Technology Stack */
+.tech-stack-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.tech-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.tech-subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.tech-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.tech-list li {
+  margin-bottom: 20px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.tech-highlight {
+  color: #84cc16;
+  font-weight: bold;
+}
+
+.tech-visual {
+  text-align: center;
+}
+
+.tech-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Target Audience */
+.target-section {
+  padding: 100px 0;
+  background: #f9fafb;
+}
+
+.target-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.target-visual {
+  text-align: center;
+}
+
+.target-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.target-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.target-content p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.target-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.target-list li {
+  margin-bottom: 15px;
+  color: #6b7280;
+  position: relative;
+  padding-left: 20px;
+}
+
+.target-list li::before {
+  content: "•";
+  color: #84cc16;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.target-highlight {
+  color: #84cc16;
+  font-weight: bold;
+}
+
+/* Process Section */
+.process-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.process-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.process-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.process-header p {
+  color: #6b7280;
+  font-size: 1.2rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.process-step {
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  background: #84cc16;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0 auto 30px;
+}
+
+.step-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Final CTA */
+.final-cta {
+  padding: 100px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #84cc16;
+  border: 2px solid #84cc16;
+}
+
+.btn-outline:hover {
+  background: #84cc16;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .services-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tech-grid,
+  .target-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+
+  .tech-content h2,
+  .target-content h2 {
+    font-size: 2rem;
+  }
+
+  .process-header h2,
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+  }
+}

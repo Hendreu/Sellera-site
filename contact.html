@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contato - Sellera | Entre em contato conosco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/logo.png" alt="Logo Sellera" style="height:40px;"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="services.html">Nossos Serviços</a></li>
+                    <li><a href="contact.html" class="active">Contato</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+        <img src="imgs/CONTACTheader.png" alt="Header Contato" style="width:100%;height:auto;display:block;" />
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Contato</h3>
+                    <a href="tel:+5511943269549" class="contact-link">(11) 94326-9549</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:comercial@sellera.ai" class="contact-link">comercial@sellera.ai</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localização</h3>
+                    <p class="address">Rua Desembargador Joaquim Celidônio, 33 - Jardim Paulistano</p>
+                    <a href="https://maps.google.com/?q=Rua+Desembargador+Joaquim+Celidônio,+33+-+Jardim+Paulistano" target="_blank" class="maps-link">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-header">
+                <h2>Fale com a gente e descubra como transformar seu comercial em uma <span class="highlight">máquina de vendas com IA e dados:</span></h2>
+            </div>
+            
+            <form class="main-contact-form" id="mainContactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                        <span class="error-message" id="fullNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailAddress" name="emailAddress" placeholder="E-Mail Address" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-specialist">
+                        <span class="btn-text">FALE COM UM ESPECIALISTA</span>
+                        <span class="btn-loading">ENVIANDO...</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps?q=-23.57107570876871,-46.689533208399006&z=16&output=embed"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Sobre a Sellera</h3>
+                    <p>Especialistas em acelerar vendas para empresas B2B. Unimos tecnologia, dados e pessoas para gerar resultados reais e previsíveis.</p>
+                    <div class="social-icons">
+                        <div class="social-icon"><i class="fab fa-facebook"></i></div>
+                        <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                        <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="social-icon"><i class="fab fa-behance"></i></div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Como funciona a Sellera</a></li>
+                        <li><a href="#">Soluções para sua empresa</a></li>
+                        <li><a href="#">Dúvidas frequentes</a></li>
+                        <li><a href="#">Cases de sucesso</a></li>
+                        <li><a href="#">Blog Sellera</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Páginas Adicionais</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="#">Como Trabalhamos</a></li>
+                        <li><a href="#">Suporte Rápido</a></li>
+                        <li><a href="contact.html">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Fale com a Sellera</h3>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Seu nome completo" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-lime">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <!-- Removido o copyright -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

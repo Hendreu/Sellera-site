@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos customizados para Sellera */
+.hero-pattern {
+  background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+}
+
+.skew-pattern {
+  transform: skewX(-12deg);
+}
+
+.racing-blur {
+  filter: blur(2px) brightness(0.7);
+}
+
+/* Animações customizadas */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+/* Gradientes customizados */
+.gradient-lime {
+  background: linear-gradient(135deg, #84cc16, #65a30d);
+}
+
+.gradient-pink {
+  background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+/* Efeitos hover customizados */
+.btn-sellera {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.btn-sellera:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Padrões geométricos */
+.geometric-bg {
+  background-image: linear-gradient(45deg, transparent 25%, rgba(132, 204, 22, 0.1) 25%),
+    linear-gradient(-45deg, transparent 25%, rgba(132, 204, 22, 0.1) 25%),
+    linear-gradient(45deg, rgba(132, 204, 22, 0.1) 75%, transparent 75%),
+    linear-gradient(-45deg, rgba(132, 204, 22, 0.1) 75%, transparent 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Responsividade customizada */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .section-padding {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Cores customizadas da Sellera */
+:root {
+  --sellera-lime: #84cc16;
+  --sellera-pink: #ec4899;
+  --sellera-dark: #0f0f0f;
+  --sellera-gray: #6b7280;
+}
